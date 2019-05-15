@@ -1,10 +1,9 @@
 # RESTful Web Services with Spring Framework
 * A quick start to building your REST API with Spring Boot and Spring MVC
 * https://www.udemy.com/restful-web-services-with-spring-framework-a-quick-start/
-<hr>
+
 **Contents**
 <!-- TOC depthFrom:2 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
-
 - [1. Introduction](#1-introduction)
 	- [Source code](#source-code)
 	- [Download and install Postman HTTP client](#download-and-install-postman-http-client)
