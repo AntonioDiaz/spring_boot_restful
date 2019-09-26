@@ -4,6 +4,7 @@
 
 **Contents**
 <!-- TOC depthFrom:2 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
 - [1. Introduction](#1-introduction)
 	- [Source code](#source-code)
 	- [Download and install Postman HTTP client](#download-and-install-postman-http-client)
@@ -26,8 +27,8 @@
 	- [Returning object as json or xml representation](#returning-object-as-json-or-xml-representation)
 	- [Set response status code](#set-response-status-code)
 - [7. Handle HTT POST Request](#7-handle-htt-post-request)
-- [@RequestBody](#requestbody)
-- [Validating HTTP POST Request Body](#validating-http-post-request-body)
+	- [@RequestBody](#requestbody)
+	- [Validating HTTP POST Request Body](#validating-http-post-request-body)
 - [8. Handle HTTP PUT and HTTP Delete Request](#8-handle-http-put-and-http-delete-request)
 	- [Store users temporary](#store-users-temporary)
 	- [Handle HTTP PUT request](#handle-http-put-request)
@@ -187,7 +188,7 @@ public ResponseEntity<UserRest> get(@PathVariable String userId) {
 ```
 
 ## 7. Handle HTT POST Request
-## @RequestBody
+### @RequestBody
 ```java
 @PostMapping(
         consumes = {MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE},
@@ -196,7 +197,7 @@ public ResponseEntity<UserRest> create(@RequestBody UserRest userRest) {
     return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 }
 ```
-## Validating HTTP POST Request Body
+### Validating HTTP POST Request Body
 * Post explining validations: http://appsdeveloperblog.com/validate-request-body-in-restful-web-service/
 * Hibernate validations: http://docs.jboss.org/hibernate/stable/validator/reference/en-US/html_single/#validator-defineconstraints-spec
 * Enable Validation: add **@Valid** in post method.
